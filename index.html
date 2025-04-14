@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Firestore Starter</title>
+  </head>
+  <body>
+    <h1>Soccer Teams in Firestore</h1>
+    <div id="results"></div>
+
+    <!-- Firebase libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+
+    <!-- Firebase config and init -->
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyDrU4zoEiYq2SMTTrmdPCpLF0BQPgF6DA0",
+        authDomain: "march-20-2025-project.firebaseapp.com",
+        projectId: "march-20-2025-project",
+        storageBucket: "march-20-2025-project.appspot.com",
+        messagingSenderId: "936573584213",
+        appId: "1:936573584213:web:6d1f3052ea4520c64665dc",
+        measurementId: "G-0TQFX5G9KF",
+      };
+
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      window.db = db; // make it available to app.js
+    </script>
+
+    <!-- Your app logic -->
+    <script src="app.js"></script>
+  </body>
+</html>
